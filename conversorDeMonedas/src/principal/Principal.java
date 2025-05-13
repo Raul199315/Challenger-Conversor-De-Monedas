@@ -33,7 +33,8 @@ public class Principal {
                 3) Dolar => Real Brasileño
                 4) Real Brasileño => Dolar
                 5) Peso Colobiano => Real Brasileño
-                6) salir 
+                6) Real Brasileño => Peso Colobiano
+                7) salir 
                 
                 """);
         opcion = teclado.nextInt();
@@ -42,7 +43,7 @@ public class Principal {
           System.out.println("Seleccionaste Convertir Dolar => Peso Colombiano");
           System.out.println("Ingrese el valor que desea convertir");
           valor = teclado.nextDouble();
-          conversor.conversor("USD", "Pesos", 0, " Dolares en Pesos Colombianos son: ", valor);
+          conversor.conversor("USD", "COP", 0, " Dolares en Pesos Colombianos son: ", valor);
 
         } else if (opcion == 2) {
           System.out.println("Seleccionaste Convertir Peso Colombiano => Dolar ");
@@ -66,6 +67,12 @@ public class Principal {
 
           conversor.conversor("COP", "BRL", 2, " Pesos Colombianos en Reales Brasileños son: ", valor);
         } else if (opcion == 6) {
+          System.out.println("Seleccionaste Convertir Real Brasileño => Peso Colobiano ");
+          System.out.println("Ingrese el valor que desea convertir");
+          valor = teclado.nextDouble();
+          conversor.conversor("BRL", "COP", 0, " Pesos Colombianos en Reales Brasileños son: ", valor);
+
+        } else if (opcion == 7) {
           System.out.println("Saliendo........................");
           bandera = false;
         }
