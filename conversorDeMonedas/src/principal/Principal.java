@@ -39,24 +39,28 @@ public class Principal {
         opcion = teclado.nextInt();
         if (opcion == 1) {
           System.out.println("**************************************************");
+          System.out.println("Seleccionaste Convertir Dolar => Peso Colombiano");
           System.out.println("Ingrese el valor que desea convertir");
           valor = teclado.nextDouble();
           conversor.conversor("USD", "Pesos", 0, " Dolares en Pesos Colombianos son: ", valor);
 
         } else if (opcion == 2) {
+          System.out.println("Seleccionaste Convertir Peso Colombiano => Dolar ");
           System.out.println("Ingrese el valor que desea convertir");
           valor = teclado.nextDouble();
           conversor.conversor("COP", "USD", 1, " Pesos Colombianos en Dolares son: ", valor);
         } else if (opcion == 3) {
+          System.out.println("Seleccionaste Convertir Dolar => Real Brasileño ");
           System.out.println("Ingrese el valor que desea convertir");
           valor = teclado.nextDouble();
-          conversor.conversor("USD", "BRL", 2, " Dolares en Reales Brasileños son: ", valor);
+           conversor.conversor("USD", "BRL", 2, " Dolares en Reales Brasileños son: ", valor);
         } else if (opcion == 4) {
+          System.out.println("Seleccionaste Convertir Real Brasileño => Dolar ");
           System.out.println("Ingrese el valor que desea convertir");
           valor = teclado.nextDouble();
           conversor.conversor("BRL", "USD", 1, " Reales Brasileños en Dolares  son: ", valor);
         } else if (opcion == 5) {
-          System.out.println("Ingrese el valor que desea convertir");
+          System.out.println("Seleccionaste Convertir Peso Colobiano => Real Brasileño ");
           System.out.println("Ingrese el valor que desea convertir");
           valor = teclado.nextDouble();
 
